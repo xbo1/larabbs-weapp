@@ -140,6 +140,11 @@
       // 调用组件的 loadMore 方法
       this.$invoke('topiclist', 'loadMore')
     }
+    onShow() {
+      this.$parent.checkRefreshPages(this.getCurrentPages().pop().route, () => {
+        this.$invoke('topiclist', 'reload')
+      })
+    }
     methods = {
       // 切换分类列表展示
       toggle () {
