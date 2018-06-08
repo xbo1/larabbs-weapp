@@ -45,7 +45,7 @@ module.exports = {
       filter: /\.js$/,
       config: {
         find: /__BASE_URL__/g,
-        replace: prod ? "'https://weapp.laravel-china.org/api'" : "'http://larabbs.test/api'"
+        replace: prod ? "'https://weapp.xbo1.com/api'" : "'http://larabbs.test/api'"
       }
     }
   },
@@ -81,7 +81,7 @@ if (prod) {
       filter: /\.js$/,
       config: {
         find: /__BASE_URL__/g,
-        replace: prod ? "'https://weapp.laravel-china.org/api'" : "'http://larabbs.test/api'"
+        replace: prod ? "'https://weapp.xbo1.com/api'" : "'http://larabbs.test/api'"
       }
     }
   }
